@@ -1,0 +1,831 @@
+<?xml version="1.0"?>
+<config>
+
+    <tabs>
+        <estoreiqconfig translate="label" module="estoreiq">
+            <label>eStoreIQ</label>
+            <sort_order>0</sort_order>
+        </estoreiqconfig>
+    </tabs> 
+	
+	
+    <sections>
+	
+		<general>
+            <groups>
+                <example>
+                    <label>Group addition example</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>                    
+                </example>
+            </groups>
+        </general>	
+		
+		
+        <estoreiq_options translate="label" module="estoreiq">
+		
+			<label>PDF Customiser</label>
+			<tab>estoreiqconfig</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>1000</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			
+			
+			
+			<groups>
+				<messages translate="label">
+					<label>eStoreIQ PDF Customiser</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>1</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>  
+
+								
+					<comment><![CDATA[
+						<div style='position:relative; width:100%; '>
+							
+							<h1 style='text-align:left; font-family: "Open Sans", sans-serif; font-size:26px; margin-left:260px; margin-bottom:45px; margin-top:20px; '>eStoreIQ PDF Customiser</h1>
+							
+							
+							<div style='width:280px; height:210px; position:absolute; top:60px; right:0px; font-size:17px; font-weight:bold; color:#222; margin-top:70px;   text-align:center;'>
+							
+								
+								<a class="a_demo_three" href="http://www.estoreiq.com/labels/integrated-labels/ebay-integrated-shipping-labels/?c=AU" target="_BLANK">
+									PURCHASE LABELS
+								</a>
+								
+								<div style='clear:both; height:40px;'></div>
+								
+								<a class="a_demo_four" href="http://www.estoreiq.com/labels/integrated-labels/ebay-integrated-shipping-labels/?c=US" target="_BLANK">
+									PURCHASE LABELS
+								</a>
+								
+							</div>
+							
+						</div>
+										
+					]]></comment>
+			
+			
+					 <fields>  <!-- Fields Tag -->
+					 
+						<estoreiq_carrier_selected>
+							<label><![CDATA[ <h3 style='font-size:14px;'>Templates </h3> ]]></label>
+							
+							<frontend_type>select</frontend_type>
+							<!-- adding a source model -->
+							<source_model>estoreiq/shipperoptions</source_model>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							
+							<comment><![CDATA[
+								<br/><br/>
+								
+							]]></comment>
+						</estoreiq_carrier_selected>
+						
+                       	<estoreiq_font_selected>
+							<label><![CDATA[ <h3 style='font-size:14px;'>Font Style </h3> ]]></label>
+							
+							<frontend_type>select</frontend_type>
+							<!-- adding a source model -->
+							<source_model>estoreiq/fontoptions</source_model>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							
+							<comment><![CDATA[
+								<br/>
+								
+							]]></comment>
+							
+						</estoreiq_font_selected>
+						
+						<estoreiq_heading_font_size_selected>
+							<label><![CDATA[ <h3 style='font-size:14px;'>Label Font Size </h3> ]]></label>
+							
+							<frontend_type>select</frontend_type>
+							<!-- adding a source model -->
+							<source_model>estoreiq/headingfontsizeoptions</source_model>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							
+							<comment><![CDATA[
+								<br/>
+								
+							]]></comment>
+							
+						</estoreiq_heading_font_size_selected>
+						
+						
+						
+						<estoreiq_body_font_size_selected>
+							<label><![CDATA[ <h3 style='font-size:14px;'>Tear-off Font Size </h3> ]]></label>
+							
+							<frontend_type>select</frontend_type>
+							<!-- adding a source model -->
+							<source_model>estoreiq/bodyfontsizeoptions</source_model>
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							
+							<comment><![CDATA[
+								<br/><br/>
+								
+							]]></comment>
+							
+						</estoreiq_body_font_size_selected>
+						
+						
+						
+						
+						
+							<estoreiq_logo translate="label">
+                            <label><![CDATA[ <h3 style='font-size:14px;'>Top Logo </h3><span style='font-size:10px'>Please use a non-interlaced PNG</span> ]]></label>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">estoreiq-logo</upload_dir>
+                            <base_url type="media" scope_info="1">estoreiq-logo</base_url>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							
+							<comment><![CDATA[
+								<br/>
+								
+							]]></comment>
+                        </estoreiq_logo>
+						
+						
+						
+						
+						<estoreiq_logo2 translate="label">
+                            <label><![CDATA[ <h3 style='font-size:14px;'>Middle Logo </h3><span style='font-size:10px'>Please use a non-interlaced PNG</span> ]]></label>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">estoreiq-logo</upload_dir>
+                            <base_url type="media" scope_info="1">estoreiq-logo</base_url>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							
+							<comment><![CDATA[
+								
+								<br/><br/>
+								
+							]]></comment>
+							
+							
+                         
+                        </estoreiq_logo2>
+						
+						
+						
+						
+						<estoreiq_logo3 translate="label">
+                            <label><![CDATA[ <h3 style='font-size:14px;'>Footer Logo </h3><span style='font-size:10px'>Please use a non-interlaced PNG</span> ]]></label>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">estoreiq-logo</upload_dir>
+                            <base_url type="media" scope_info="1">estoreiq-logo</base_url>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							
+							<comment><![CDATA[
+								
+								<br/><br/>
+								
+							]]></comment>
+							
+							
+                         
+                        </estoreiq_logo3>
+						
+						
+						
+						<estoreiq_smallmessage translate="label">
+                            <label>Small message</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </estoreiq_smallmessage>
+						
+						<estoreiq_smallmessage2 translate="label">
+                            <label>Small message line 2</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </estoreiq_smallmessage2>
+						
+						<estoreiq_tearoffmessage translate="label">
+                            <label>Tear off message</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </estoreiq_tearoffmessage>
+						
+						<estoreiq_takeiteasymessage translate="label">
+                            <label>Take it easy message</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </estoreiq_takeiteasymessage>
+						
+						
+						
+						<estoreiq_qr_detection_code_enabled>
+							<label><![CDATA[ <h3 style='font-size:14px;'>OrderID Barcode Enabled </h3> ]]></label>
+							
+							<frontend_type>select</frontend_type>
+							<!-- adding a source model -->
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>8</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							
+							   <tooltip><![CDATA[<div style="border-radius:6px;background-color:#fcc;padding:10px;margin-left:10px;width:230px;">
+									Adds a QR code identifying the Order ID. <br/><br/>
+									This code can be recognised by the <strong>eStoreIQ Mobile App</strong> (Android/iPhone) and you can process and ship your orders without being fixed to your computer.<br/><br/>
+									Simply search for <strong>"eStoreIQ"</strong> in <strong>iTunes/Google Play Store</strong>
+							   </div>]]></tooltip>
+
+							<comment><![CDATA[
+											<br/><br/><br/>
+								
+								<h2 style='text-shadow: 0px 1px 1px #EEE; color:#4a4a4a; margin-left:-100px; font-size:18px;'>Layout</h2>
+								
+								
+								<style>
+								
+								
+								
+									.a_demo_three,
+									.a_demo_four {
+										background-color: #3BB3E0;
+										font-family: 'Open Sans', sans-serif;
+										font-size: 12px;
+										text-decoration: none;
+										color: white !important;
+										position: relative;
+										padding: 10px 20px;
+										border-left: solid 1px #2AB7EC;
+										margin-left: 35px;
+										background-image: linear-gradient(bottom, #2CA0CA 0%, #3EB8E5 100%);
+										background-image: -o-linear-gradient(bottom, #2CA0CA 0%, #3EB8E5 100%);
+										background-image: -moz-linear-gradient(bottom, #2CA0CA 0%, #3EB8E5 100%);
+										background-image: -webkit-linear-gradient(bottom, #2CA0CA 0%, #3EB8E5 100%);
+										background-image: -ms-linear-gradient(bottom, #2CA0CA 0%, #3EB8E5 100%);
+										background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #2CA0CA), color-stop(1, #3EB8E5) );
+										-webkit-border-top-right-radius: 5px;
+										-webkit-border-bottom-right-radius: 5px;
+										-moz-border-radius-topright: 5px;
+										-moz-border-radius-bottomright: 5px;
+										border-top-right-radius: 5px;
+										border-bottom-right-radius: 5px;
+										-webkit-box-shadow: inset 0px 1px 0px #2AB7EC, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+										-moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+										-o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+										box-shadow: inset 0px 1px 0px #2AB7EC, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+									}
+									.a_demo_three::before {
+									background-color: #2561B4;
+									content: "AU";
+									width: 38px;
+									max-height: 29px;
+									height: 100%;
+									position: absolute;
+									display: block;
+									padding-top: 8px;
+									top: 0px;
+									left: -36px;
+									font-size: 16px;
+									font-weight: bold;
+									color: #8FD1EA;
+									text-shadow: 1px 1px 0px #07526E;
+									border-right: solid 1px #07526E;
+									background-image: linear-gradient(bottom, #0A5E7D 0%, #0E8BB8 100%);
+									background-image: -o-linear-gradient(bottom, #0A5E7D 0%, #0E8BB8 100%);
+									background-image: -moz-linear-gradient(bottom, #0A5E7D 0%, #0E8BB8 100%);
+									background-image: -webkit-linear-gradient(bottom, #0A5E7D 0%, #0E8BB8 100%);
+									background-image: -ms-linear-gradient(bottom, #0A5E7D 0%, #0E8BB8 100%);
+									background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #0A5E7D), color-stop(1, #0E8BB8) );
+									-webkit-border-top-left-radius: 5px;
+									-webkit-border-bottom-left-radius: 5px;
+									-moz-border-radius-topleft: 5px;
+									-moz-border-radius-bottomleft: 5px;
+									border-top-left-radius: 5px;
+									border-bottom-left-radius: 5px;
+									-webkit-box-shadow: inset 0px 1px 0px #2AB7EC, 0px 5px 0px 0px #032B3A, 0px 10px 5px #999;
+									-moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999;
+									-o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999;
+									box-shadow: inset 0px 1px 0px #2AB7EC, 0px 5px 0px 0px #032B3A, 0px 10px 5px #999;
+									}
+
+									.a_demo_four::before {
+									background-color: #2561B4;
+									content: "US";
+									width: 38px;
+									max-height: 29px;
+									height: 100%;
+									position: absolute;
+									display: block;
+									padding-top: 8px;
+									top: 0px;
+									left: -36px;
+									font-size: 16px;
+									font-weight: bold;
+									color: #8FD1EA;
+									text-shadow: 1px 1px 0px #07526E;
+									border-right: solid 1px #07526E;
+									background-image: linear-gradient(bottom, #0A5E7D 0%, #0E8BB8 100%);
+									background-image: -o-linear-gradient(bottom, #0A5E7D 0%, #0E8BB8 100%);
+									background-image: -moz-linear-gradient(bottom, #0A5E7D 0%, #0E8BB8 100%);
+									background-image: -webkit-linear-gradient(bottom, #0A5E7D 0%, #0E8BB8 100%);
+									background-image: -ms-linear-gradient(bottom, #0A5E7D 0%, #0E8BB8 100%);
+									background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #0A5E7D), color-stop(1, #0E8BB8) );
+									-webkit-border-top-left-radius: 5px;
+									-webkit-border-bottom-left-radius: 5px;
+									-moz-border-radius-topleft: 5px;
+									-moz-border-radius-bottomleft: 5px;
+									border-top-left-radius: 5px;
+									border-bottom-left-radius: 5px;
+									-webkit-box-shadow: inset 0px 1px 0px #2AB7EC, 0px 5px 0px 0px #032B3A, 0px 10px 5px #999;
+									-moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999;
+									-o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999;
+									box-shadow: inset 0px 1px 0px #2AB7EC, 0px 5px 0px 0px #032B3A, 0px 10px 5px #999;
+									}
+									
+									
+									.auspostpaperpanel {
+									
+									}
+									
+									
+									
+									
+									.opensans {
+										font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+									}
+									.arimo {
+										font-family: 'Arimo', Helvetica, Arial, sans-serif;
+									}
+									.asap {
+										font-family: 'Asap', Helvetica, Arial, sans-serif;
+									}
+									.asul {
+										font-family: 'Asul', Helvetica, Arial, sans-serif;
+									}
+									.cabin {
+										font-family: 'Cabin', Helvetica, Arial, sans-serif;
+									}
+									.cabincondensed {
+										font-family: 'Cabin Condensed', Helvetica, Arial, sans-serif;
+									}
+									.droidsans {
+										font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+									}
+									.droidserif {
+										font-family: 'Droid Serif', Helvetica, Arial, sans-serif;
+									}
+									.francoisone {
+										font-family: 'Franbcois One', Helvetica, Arial, sans-serif;
+									}
+									.lato {
+										font-family: 'Lato', Helvetica, Arial, sans-serif;
+									}
+									.lobster {
+										font-family: 'Lobster', Helvetica, Arial, sans-serif;
+									}
+									.opensans {
+										font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+									}
+									.oswald {
+										font-family: 'Oswald', Helvetica, Arial, sans-serif;
+									}
+									.ptsans {
+										font-family: 'Pt Sans', Helvetica, Arial, sans-serif;
+									}
+									.ptserif {
+										font-family: 'Pt Serif', Helvetica, Arial, sans-serif;
+									}
+									.ubuntu {
+										font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+									}
+									.ubuntucondensed {
+										font-family: 'Ubuntu Condensed', Helvetica, Arial, sans-serif;
+									}
+									
+									
+									.lobster {
+										font-family: Lobster, Helvetica, Arial, sans-serif;
+									}
+									
+									
+								</style>
+								
+								
+								<div id='auspostpaperpanel' style='position:relative; width:595px; height:842px; margin-left:-100px; background-color:#FFF; -moz-box-shadow: 0 0 16px #BBB;-webkit-box-shadow: 0 0 16px #BBB; box-shadow: 0 0 16px #BBB;'>
+								
+								
+								
+									<div id='htmlbarcode' style='position:absolute;top:20px;right:20px;'>
+									
+										<div id="bcTarget" style="padding: 0px; overflow: auto; width: 230px;"><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 20px"></div><div style="float: left; font-size: 0px; width:0; border-left: 2px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 2px"></div><div style="float: left; font-size: 0px; width:0; border-left: 2px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 4px"></div><div style="float: left; font-size: 0px; width:0; border-left: 2px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 4px"></div><div style="float: left; font-size: 0px; width:0; border-left: 4px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 2px"></div><div style="float: left; font-size: 0px; width:0; border-left: 8px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 2px"></div><div style="float: left; font-size: 0px; width:0; border-left: 2px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 4px"></div><div style="float: left; font-size: 0px; width:0; border-left: 6px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 2px"></div><div style="float: left; font-size: 0px; width:0; border-left: 2px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 2px"></div><div style="float: left; font-size: 0px; width:0; border-left: 4px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 6px"></div><div style="float: left; font-size: 0px; width:0; border-left: 2px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 8px"></div><div style="float: left; font-size: 0px; width:0; border-left: 2px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 2px"></div><div style="float: left; font-size: 0px; width:0; border-left: 2px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 4px"></div><div style="float: left; font-size: 0px; width:0; border-left: 2px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 6px"></div><div style="float: left; font-size: 0px; width:0; border-left: 2px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 2px"></div><div style="float: left; font-size: 0px; width:0; border-left: 2px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 2px"></div><div style="float: left; font-size: 0px; width:0; border-left: 2px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 2px"></div><div style="float: left; font-size: 0px; width:0; border-left: 2px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 4px"></div><div style="float: left; font-size: 0px; width:0; border-left: 2px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 6px"></div><div style="float: left; font-size: 0px; width:0; border-left: 6px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 2px"></div><div style="float: left; font-size: 0px; width:0; border-left: 2px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 4px"></div><div style="float: left; font-size: 0px; width:0; border-left: 6px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 4px"></div><div style="float: left; font-size: 0px; width:0; border-left: 2px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 2px"></div><div style="float: left; font-size: 0px; width:0; border-left: 4px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 4px"></div><div style="float: left; font-size: 0px; width:0; border-left: 4px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 2px"></div><div style="float: left; font-size: 0px; width:0; border-left: 4px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 2px"></div><div style="float: left; font-size: 0px; width:0; border-left: 4px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 4px"></div><div style="float: left; font-size: 0px; width:0; border-left: 2px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 4px"></div><div style="float: left; font-size: 0px; width:0; border-left: 2px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 6px"></div><div style="float: left; font-size: 0px; width:0; border-left: 2px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 2px"></div><div style="float: left; font-size: 0px; width:0; border-left: 2px solid #000000; height: 30px;"></div><div style="float: left; font-size: 0px; background-color: #FFFFFF; height: 30px; width: 20px"></div></div>
+									
+									</div>
+									
+								
+									<div style='position:absolute; top: 34px; left:34px; height: 113px; width:203px; border:1px dashed #AAA; -moz-border-radius: 10px;-webkit-border-radius: 10px;border-radius: 10px; '>
+									
+									
+										<div id='auspost-logo-top' style='margin-top:10px; margin-left:10px;'></div>
+									
+										<div id='the-small-message' style='margin-left:10px;'></div>
+										<div id='the-small-message2' style='margin-left:10px; margin-top:2px;'></div>
+									</div>
+									
+									
+									
+									
+									<div style='position:absolute; font-size:12px; line-height:15px; top: 115px; right:11px; height: 119px; width:344px;  border:1px dashed #AAA; -moz-border-radius: 10px;-webkit-border-radius: 10px;border-radius: 10px; '>
+										<div style='margin-top:30px; margin-left:15px;'
+											Customer Name<br/>
+											123 Street Name, Suburb<br/>
+											State, 3000<br/>
+											Country<br/>
+											T: (555) 55555555
+										</div>
+									</div>
+									
+									
+									
+									
+									<div style='position:absolute; top: 246px; left:0; height: 1px; width:100%; border-top:1px dashed #AAA;'>
+									
+									
+										<div style='width:280px; float:left; margin-top:10px; margin-left:10px;'>
+											<div id='auspost-logo-middle' style=''></div>
+											
+											Order #: 100000215<br/>
+											Date: 02/11/2012
+
+										</div>
+										
+										<div id='tearoff-message' style='width:286px; margin-top: 55px; float:right;'>
+											
+										</div>
+										
+										
+										<div style='clear:both; padding-top:100px;'>
+										
+											<table style='margin-left:10px;'>
+											<tr>
+												<td style='width:280px;'>Product </td>
+												<td style='width:70px;'>SKU</td>
+												<td style='width:70px;'>Price</td>
+												<td style='width:60px;'>QTY</td>
+												<td style='width:60px;'>Tax </td>
+												<td style='width:60px;'>Subtotal</td>
+											</tr>
+											<tr><td colspan='5' style='border-bottom:1px solid #EEE; height:10px;'></td></tr>
+											<tr><td colspan='5' style='height:25px;'></td></tr>
+											<tr>
+												<td style='width:210px;'>Product Description</td>
+												<td style='width:140px;'>ST-LLP-SL</td>
+												<td style='width:70px;'>$60.00</td>
+												<td style='width:60px;'>1</td>
+												<td style='width:60px;'>$0.00</td>
+												<td style='width:60px;'>$60.00</td>
+											</tr>
+											<tr><td colspan='5' style='border-bottom:1px solid #EEE; height:25px;'></td></tr>
+											</table>
+											
+											
+											<table style='width:200px; float:right; margin-right:11px; margin-top:20px;'>
+											
+												<tr>
+													<td>Subtotal:</td>
+													<td>$60.00</td>
+												</tr>
+												<tr>
+													<td>Shipping & Handling:</td>
+													<td>$5.00</td>
+												</tr>
+												<tr>
+													<td>Grand Total:</td>
+													<td>$65.00</td>
+												</tr>
+												
+											</table>
+											    
+											
+											
+										</div>
+									
+									</div>
+								
+								
+								
+								
+									<div id='auspost-logo-footer' style='position:absolute; bottom:55px; left:25px;'></div>
+									
+									<div id='takeiteasy-message' style='width:190px; position:absolute; bottom:25px; left:25px;'>
+											
+									</div>
+									
+									
+									
+									
+								</div>
+								
+								
+								<div style='text-align:right; font-size:10px; margin-top:25px; margin-right:5px; color:#656565;'>
+									This layout gives a preview only, please save the configuration, and print a test label to see results.
+								</div>
+								
+								
+								<script type='text/javascript'>
+									
+									function gotoinvoice() {
+										 jQuery('body, html').animate({scrollTop : 1000}, 'fast');
+									}
+									
+									
+									function changethefont(font_changer) {
+									
+										if(font_changer == 'opensans') {
+												jQuery('head').append("<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>");
+												jQuery('#auspostpaperpanel').removeClass().addClass('opensans');	
+
+											}
+											else if(font_changer == 'arimo') {
+												jQuery('head').append("<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>");
+												jQuery('#auspostpaperpanel').removeClass().addClass('arimo');	
+											}
+											else if(font_changer == 'asap') {
+												jQuery('head').append("<link href='http://fonts.googleapis.com/css?family=Asap' rel='stylesheet' type='text/css'>");
+												jQuery('#auspostpaperpanel').removeClass().addClass('asap');	
+											}
+											else if(font_changer == 'asul') {
+												jQuery('head').append("<link href='http://fonts.googleapis.com/css?family=Asul' rel='stylesheet' type='text/css'>");
+												jQuery('#auspostpaperpanel').removeClass().addClass('asul');		
+											}
+											else if(font_changer == 'cabin') {
+												jQuery('head').append("<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>");
+												jQuery('#auspostpaperpanel').removeClass().addClass('cabin');		
+											}
+											else if(font_changer == 'cabincondensed') {
+												jQuery('head').append("<link href='http://fonts.googleapis.com/css?family=Cabin+Condensed' rel='stylesheet' type='text/css'>");
+												jQuery('#auspostpaperpanel').removeClass().addClass('cabincondensed');		
+											}
+											else if(font_changer == 'droidsans') {
+												jQuery('head').append("<link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>");
+												jQuery('#auspostpaperpanel').removeClass().addClass('droidsans');		
+											}
+											else if(font_changer == 'droidserif') {
+												jQuery('head').append("<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>");
+												jQuery('#auspostpaperpanel').removeClass().addClass('droidserif');		
+											}
+											else if(font_changer == 'francoisone') {
+												jQuery('head').append("<link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>");
+												jQuery('#auspostpaperpanel').removeClass().addClass('francoisone');		
+											}
+											else if(font_changer == 'lato') {
+												jQuery('head').append("<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>");
+												jQuery('#auspostpaperpanel').removeClass().addClass('lato');		
+											}
+											else if(font_changer == 'lobster') {
+												jQuery('head').append("<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>");
+												jQuery('#auspostpaperpanel').removeClass().addClass('lobster');		
+											}
+											else if(font_changer == 'oswald') {
+												jQuery('head').append("<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>");
+												jQuery('#auspostpaperpanel').removeClass().addClass('oswald');		
+											}
+											else if(font_changer == 'ptsans') {
+												jQuery('head').append("<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>");
+												jQuery('#auspostpaperpanel').removeClass().addClass('ptserif');		
+											}
+											else if(font_changer == 'ptserif') {
+												jQuery('head').append("<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>");
+												jQuery('#auspostpaperpanel').removeClass().addClass('ptserif');		
+											}
+											else if(font_changer == 'ubuntu') {
+												jQuery('head').append("<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>");
+												jQuery('#auspostpaperpanel').removeClass().addClass('ubuntu');		
+											}
+											else if(font_changer == 'ubuntucondensed') {
+												jQuery('head').append("<link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>");
+												jQuery('#auspostpaperpanel').removeClass().addClass('ubuntucondensed');		
+											}
+											
+									}
+									jQuery("#estoreiq_options_messages_estoreiq_font_selected").change(function() {
+									
+													
+													
+											selected_font_changer = jQuery(this).val();
+												
+											changethefont(selected_font_changer);
+											
+											gotoinvoice();
+									});
+									
+									
+									
+									
+									jQuery("#estoreiq_options_messages_estoreiq_qr_detection_code_enabled").change(function() {
+									
+													
+													
+											qr_code_enabled_is = jQuery(this).val();
+												
+											if(qr_code_enabled_is == 0) {
+												jQuery('#htmlbarcode').hide();
+											}
+											else {
+												jQuery('#htmlbarcode').show();
+											}
+											
+									});
+									
+									
+									
+									jQuery(document).ready(function() {
+									
+												
+												qr_code_enabled_is = jQuery('#estoreiq_options_messages_estoreiq_qr_detection_code_enabled').val();
+												
+												if(qr_code_enabled_is == 0) {
+													jQuery('#htmlbarcode').hide();
+												}
+												else {
+													jQuery('#htmlbarcode').show();
+												}
+											
+											
+												
+												selected_font_changer = jQuery('#estoreiq_options_messages_estoreiq_font_selected').val();
+												
+												changethefont(selected_font_changer);
+												
+
+												
+												the_selected_logo_top = jQuery('#row_estoreiq_options_messages_estoreiq_logo').find('img').attr('src');
+												placed_top_logo = '<img src="'+ the_selected_logo_top +'" style="height:40px;" />';
+												jQuery('#auspost-logo-top').html(placed_top_logo);
+												
+												the_selected_logo_middle = jQuery('#row_estoreiq_options_messages_estoreiq_logo2').find('img').attr('src');
+												placed_middle_logo = '<img src="'+ the_selected_logo_middle +'" style="height:40px;" />';
+												jQuery('#auspost-logo-middle').html(placed_middle_logo);
+												
+												the_selected_logo_footer = jQuery('#row_estoreiq_options_messages_estoreiq_logo3').find('img').attr('src');
+												placed_footer_logo = '<img src="'+ the_selected_logo_footer +'" style="height:30px;" />';
+												jQuery('#auspost-logo-footer').html(placed_footer_logo);
+								
+								
+								
+								
+												jQuery('#estoreiq_options_messages_estoreiq_logo_image').css('width','auto');
+												jQuery('#estoreiq_options_messages_estoreiq_logo_image').css('height','80');
+												
+												jQuery('#estoreiq_options_messages_estoreiq_logo2_image').css('width','auto');
+												jQuery('#estoreiq_options_messages_estoreiq_logo2_image').css('height','80');
+												
+												jQuery('#estoreiq_options_messages_estoreiq_logo3_image').css('width','auto');
+												jQuery('#estoreiq_options_messages_estoreiq_logo3_image').css('height','50');
+												
+												
+								
+												jQuery('.scope-label').hide();
+												
+												
+												
+												
+												
+												the_small_message = jQuery('#estoreiq_options_messages_estoreiq_smallmessage').parent().html();
+												jQuery('#estoreiq_options_messages_estoreiq_smallmessage').parent().html('');
+												jQuery('#the-small-message').html(the_small_message);
+												jQuery('#estoreiq_options_messages_estoreiq_smallmessage').css('width','150');
+												jQuery('tr#row_estoreiq_options_messages_estoreiq_smallmessage').remove();
+												//jQuery('#estoreiq_options_messages_estoreiq_smallmessage').css(font-family', 'Lobster, Helvetica, Arial, sans-serif');
+												
+												the_small_message2 = jQuery('#estoreiq_options_messages_estoreiq_smallmessage2').parent().html();
+												jQuery('#estoreiq_options_messages_estoreiq_smallmessage2').parent().html('');
+												jQuery('#the-small-message2').html(the_small_message2);
+												jQuery('#estoreiq_options_messages_estoreiq_smallmessage2').css('width','150');
+												jQuery('tr#row_estoreiq_options_messages_estoreiq_smallmessage2').remove();
+												//jQuery('#row_estoreiq_options_messages_estoreiq_smallmessage2').css(font-family', 'Lobster, Helvetica, Arial, sans-serif');
+												
+												the_tearoff_message = jQuery('#estoreiq_options_messages_estoreiq_tearoffmessage').parent().html();
+												jQuery('#estoreiq_options_messages_estoreiq_tearoffmessage').parent().html('');
+												jQuery('#tearoff-message').html(the_tearoff_message);
+												jQuery('#estoreiq_options_messages_estoreiq_tearoffmessage').css('width','220');
+												jQuery('tr#row_estoreiq_options_messages_estoreiq_tearoffmessage').remove();
+												//jQuery('#estoreiq_options_messages_estoreiq_tearoffmessage').css(font-family', 'Lobster, Helvetica, Arial, sans-serif');
+												
+												the_takeiteasy_message = jQuery('#estoreiq_options_messages_estoreiq_takeiteasymessage').parent().html();
+												jQuery('#estoreiq_options_messages_estoreiq_takeiteasymessage').parent().html('');
+												jQuery('#takeiteasy-message').html(the_takeiteasy_message);
+												jQuery('#estoreiq_options_messages_estoreiq_takeiteasymessage').css('width','190');
+												jQuery('tr#row_estoreiq_options_messages_estoreiq_takeiteasymessage').remove();
+												//jQuery('#estoreiq_options_messages_estoreiq_takeiteasymessage').css(font-family', 'Lobster, Helvetica, Arial, sans-serif');
+												
+												
+												
+												
+								
+									});
+								</script>
+								
+								
+								
+								<!--
+								<h2 style='text-shadow: 0px 1px 1px #EEE; color:#4a4a4a; font-size:18px;'>Label Layout</h2>
+								
+								<img src='/docuuu.png' style='width:450px; border:10px solid #f1f1f1; margin-left:-11px;' />
+								
+								<div style='display:none; width:470px; height:600px; background-color:#FFF; border:6px solid #E9E9E9; margin-left:-60px;'></div>
+								-->
+								
+								<br/><br/><br/><br/><br/><br/>
+								
+								
+							]]></comment>
+							
+						</estoreiq_qr_detection_code_enabled>
+						
+						
+						
+						
+						<!--
+						<estoreiq_invoice_is_custom>
+							<label><![CDATA[ <h3 style='font-size:14px;'>Upgrade Invoices</h3> ]]></label>
+							
+							<frontend_type>select</frontend_type>
+							
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>8</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							
+							   <tooltip><![CDATA[<div style="border-radius:6px;background-color:#fcc;padding:10px;margin-left:10px;width:230px;">
+									Do you want to upgrade your invoices to include the primary (top) logo and font and style settings.
+							   </div>]]></tooltip>
+
+							<comment><![CDATA[
+							
+					
+							]]></comment>
+							
+						</estoreiq_invoice_is_custom>
+						
+						-->
+					
+						
+						
+
+											
+                    </fields>
+		
+		
+		
+
+	
+				</messages>
+				
+			</groups>
+			
+		</estoreiq_options>
+		
+    </sections>  
+	
+</config>
+
+

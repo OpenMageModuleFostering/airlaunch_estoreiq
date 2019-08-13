@@ -1,0 +1,124 @@
+<?xml version="1.0"?> 
+<config>
+
+
+		<modules> 
+			<Airlaunch_Estoreiq> 
+				<version>0.1.0</version> 
+			</Airlaunch_Estoreiq> 
+		</modules> 
+	
+	
+		<global> 
+		
+			<helpers>
+				<estoreiq>
+					<class>Airlaunch_Estoreiq_Helper</class>
+				</estoreiq>
+			</helpers> 
+			
+		
+		
+			<models>
+			
+				<estoreiq>
+					<class>Airlaunch_Estoreiq_Model</class>
+				</estoreiq> 
+				
+				<sales>
+					<rewrite>
+						<!-- <order_pdf_abstract>Airlaunch_Estoreiq_Model_Abstract</order_pdf_abstract> -->
+						<!-- <order_pdf_shipment>Airlaunch_Estoreiq_Model_Shipment</order_pdf_shipment> -->
+						<!-- <order_pdf_invoice>Airlaunch_Estoreiq_Model_Invoice</order_pdf_invoice> -->
+						<!-- <order_pdf_creditmemo>Airlaunch_Estoreiq_Model_Creditmemo</order_pdf_creditmemo> -->
+					</rewrite>
+				</sales>
+				
+			</models>
+			
+			
+			
+			<blocks>
+			
+				<configurable>
+					<class>Airlaunch_Configurable_Block</class>
+				</configurable>
+				
+				<adminhtml>
+				
+					<rewrite>
+						<page_menu>Airlaunch_Estoreiq_Block_Adminhtml_Menu</page_menu>
+					</rewrite>
+					
+					 <rewrite>
+						<sales_order_grid>Airlaunch_Estoreiq_Block_Sales_Order_Grid</sales_order_grid>
+					</rewrite>
+     
+				</adminhtml>
+				
+				<rewrite>
+					<Airlaunch_Estoreiq_OrderController>
+						<from><![CDATA[#/\w+/sales_order/print/#]]></from>
+						<to>/estoreiq/order/print/</to>
+					</Airlaunch_Estoreiq_OrderController>
+				</rewrite>
+				
+			
+			</blocks>
+			
+			
+			
+					
+		</global>	
+		
+		
+
+	
+		
+		
+		<frontend>
+			<routers>
+				<estoreiq>
+					<use>standard</use>
+					<args>
+						<module>Airlaunch_Estoreiq</module>
+						<frontName>estoreiq</frontName>
+					</args>
+				</estoreiq>
+			</routers>  
+		</frontend>
+		
+		
+		<adminhtml>
+			<acl>
+				<resources>
+					<admin>
+						<children>
+							<system>
+								<children>
+									<config>
+										<children>
+											<estoreiq_options>
+												<title>Estoreiq Module Section</title>
+											</estoreiq_options>
+										</children>
+									</config>
+								</children>
+							</system>
+						</children>
+					</admin>
+				</resources>
+			</acl>
+		</adminhtml>
+		
+		
+		
+		
+		
+
+     
+
+		
+   
+
+</config>
