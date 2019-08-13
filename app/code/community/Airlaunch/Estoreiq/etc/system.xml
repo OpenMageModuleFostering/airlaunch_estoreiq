@@ -50,9 +50,12 @@
 					<comment><![CDATA[
 						<div style='position:relative; width:100%; '>
 							
-							<h1 style='text-align:left; font-family: "Open Sans", sans-serif; font-size:26px; margin-left:260px; margin-bottom:45px; margin-top:20px; '>eStoreIQ PDF Customiser</h1>
+							<h1 style='text-align:left; font-family: "Open Sans", sans-serif; font-size:26px; margin-left:260px; margin-top:20px; '>eStoreIQ PDF Customiser</h1>
 							
 							
+							<h3>A great way to make printed labels directly from your order data</h3>
+							
+							<div style=' margin-bottom:45px;'>Use via Salses -> Orders, Actions -> eStoreIQ Customised PDFs</div>
 							<div style='width:280px; height:210px; position:absolute; top:60px; right:0px; font-size:17px; font-weight:bold; color:#222; margin-top:70px;   text-align:center;'>
 							
 								
@@ -153,7 +156,7 @@
 						
 						
 							<estoreiq_logo translate="label">
-                            <label><![CDATA[ <h3 style='font-size:14px;'>Top Logo </h3><span style='font-size:10px'>Please use a non-interlaced PNG</span> ]]></label>
+                            <label><![CDATA[ <h3 style='font-size:14px;'>Top Logo </h3><span style='font-size:10px'>Please use a non-interlaced PNG</span><div style='height:5px;'></div><span style='font-size:9px;'>Experiment with this logo size to find best resolution and spacing</span> ]]></label>
                             <frontend_type>image</frontend_type>
                             <backend_model>adminhtml/system_config_backend_image</backend_model>
                             <upload_dir config="system/filesystem/media" scope_info="1">estoreiq-logo</upload_dir>
@@ -173,7 +176,7 @@
 						
 						
 						<estoreiq_logo2 translate="label">
-                            <label><![CDATA[ <h3 style='font-size:14px;'>Middle Logo </h3><span style='font-size:10px'>Please use a non-interlaced PNG</span> ]]></label>
+                            <label><![CDATA[ <h3 style='font-size:14px;'>Middle Logo </h3><span style='font-size:10px'>Please use a non-interlaced PNG</span><div style='height:5px;'></div><span style='font-size:9px;'>Experiment with this logo size to find best resolution and spacing</span> ]]></label>
                             <frontend_type>image</frontend_type>
                             <backend_model>adminhtml/system_config_backend_image</backend_model>
                             <upload_dir config="system/filesystem/media" scope_info="1">estoreiq-logo</upload_dir>
@@ -197,7 +200,7 @@
 						
 						
 						<estoreiq_logo3 translate="label">
-                            <label><![CDATA[ <h3 style='font-size:14px;'>Footer Logo </h3><span style='font-size:10px'>Please use a non-interlaced PNG</span> ]]></label>
+                            <label><![CDATA[ <h3 style='font-size:14px;'>Footer Logo </h3><span style='font-size:10px'>Please use a non-interlaced PNG</span><div style='height:5px;'></div><span style='font-size:9px;'>Experiment with this logo size to find best resolution and spacing</span> ]]></label>
                             <frontend_type>image</frontend_type>
                             <backend_model>adminhtml/system_config_backend_image</backend_model>
                             <upload_dir config="system/filesystem/media" scope_info="1">estoreiq-logo</upload_dir>

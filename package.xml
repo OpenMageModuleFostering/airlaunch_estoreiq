@@ -1,24 +1,40 @@
 <?xml version="1.0"?>
 <package>
     <name>Airlaunch_Estoreiq</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <stability>stable</stability>
     <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
     <channel>community</channel>
     <extends/>
     <summary>Printed label customiser for Magento</summary>
-    <description>Easily create and customise your own professional invoices&#xD;
-Choose font style&#xD;
-Choose font size&#xD;
-Add store logos&#xD;
-Add custom images&#xD;
-Add custom text&#xD;
-Compatible with Integrated Labels</description>
-    <notes>1.0.0 Version, bugfixes complete, stable version</notes>
-    <authors><author><name>Justin Brooks</name><user>estoreiq</user><email>sales@estoreiq.com</email></author></authors>
+    <description>Create awesome printed labels directly from your order data&#xD;
+&#xD;
+Classy Google Fonts&#xD;
+Use Custom images&#xD;
+Add text for headers, footers&#xD;
+Compatible with Ebay Integrated Labels</description>
+    <notes>Stable 1.0.1 Release&#xD;
+&#xD;
+Things have been tightened, and bugs have been whacked, thanks for the comments on the beta, we got here in the end =P&#xD;
+&#xD;
+&#xD;
+-- INSTALLATION NOTES --&#xD;
+&#xD;
+Please login and logout after installation from Connect, this will allow the menu (System-&gt;Configuration-&gt;ESTOREIQ) to come online&#xD;
+&#xD;
+You should experiment with the image sizes for the 3 customisable images, the PDF conversion can prefer some resolutions. Do some test prints at a few sizes to get the best results on your printed sticker labels.&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+Thanks!&#xD;
+&#xD;
+&#xD;
+EstoreIQ Team</notes>
+    <authors><author><name>Justin Brooks</name><user>estoreiq</user><email>sales@estoreiq.com</email></author><author><name>Daniel Warner</name><user>airlaunch</user><email>admin@airlaunch.com.au</email></author></authors>
     <date>2013-08-28</date>
-    <time>08:14:13</time>
-    <contents><target name="magecommunity"><dir name="Airlaunch"><dir name="Estoreiq"><dir name="Block"><dir name="Adminhtml"><file name="Menu.php" hash="dc5513a03a0998e25037b39e7c13b183"/></dir><dir name="Sales"><dir name="Order"><file name="Grid.php" hash="c69def5adef78f46461f31b1c0b08363"/></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="e978f8cd3cc0d2370aa5e6c166ac225c"/></dir><dir name="Model"><file name="Abstract.php" hash="021fd207cf7c8bc289ba2667e2ba8c0f"/><file name="Bodyfontsizeoptions.php" hash="4df00aae6e51cfae4385eeb4e7557b16"/><file name="Code128bWin.ttf" hash="83596705be9d39659132277f54b3f098"/><file name="Creditmemo.php" hash="58d24adda6a473723e798a8aaf2337d2"/><file name="Fontoptions.php" hash="250540387cbdc515dbd143992f9ae38a"/><file name="Headingfontsizeoptions.php" hash="61f110f2eeee6a46fa057bb167c03984"/><file name="Invoice.php" hash="87d5b110f8651a1ae8b60719b28111b1"/><file name="Shipment.php" hash="fd7c6148325dde51267098a55b3e6b8b"/><file name="Shipperoptions.php" hash="e1fd95e23ab503af7637a03208ad0c7c"/></dir><dir name="controllers"><file name="Code128bWin.ttf" hash="83596705be9d39659132277f54b3f098"/><file name="IndexController.php" hash="a0d5f49bf7b68d4a54954ca66962695b"/><file name="MessagesController.php" hash="f12dc8432acad774ad32993a764c8b66"/><file name="OrderController.php" hash="a99c3dd008f9922551114a2bfc5ce7bd"/><dir name="fonts"><dir name="abel"><file name="Abel-Regular.ttf" hash="75e8975966c040d18b299029193d3b1f"/></dir><dir name="arimo"><file name="Arimo-Regular.ttf" hash="9a4661f2e5c1eb96c0e686f30b5ef049"/></dir><dir name="asap"><file name="Asap-Regular.ttf" hash="83e3094c6e4917d8ad4db63ee8e7a335"/></dir><dir name="asul"><file name="Asul-Bold.ttf" hash="d5fd04a8d91a383e306ce54039fbd5e1"/><file name="Asul-Regular.ttf" hash="17a2db6c0860ff5ca392ed5fad200b2c"/></dir><dir name="cabin"><file name="Cabin-Regular.ttf" hash="b308848b6663f032b7d57e6b35c7a783"/></dir><dir name="cabincondensed"><file name="CabinCondensed-Regular.ttf" hash="126dd5269b42635276f6f8d767241c75"/></dir><dir name="droid"><file name="DroidSansMono-Regular.ttf" hash="3922dfe38a36da7d6edfb1fe77b276fb"/><file name="DroidSerif-Regular.ttf" hash="bfb2f44a7c1deba39f7f4d39bff18eeb"/></dir><dir name="francoisone"><file name="FrancoisOne.ttf" hash="b78536ec82d2100c2599e89d2386a0cf"/></dir><dir name="lato"><file name="Lato-Black.ttf" hash="77d353744697c77955f9bacc7f3ed90a"/><file name="Lato-Regular.ttf" hash="7f690e503a254e0b8349aec0177e07aa"/></dir><dir name="lobster"><file name="Lobster.ttf" hash="2d942223eccba9af2e62e0f955671d29"/></dir><dir name="opensans"><file name="OpenSans-Regular.ttf" hash="629a55a7e793da068dc580d184cc0e31"/></dir><dir name="oswald"><file name="Oswald-Regular.ttf" hash="727a75824bbc14dcc8926e4ebb85ea71"/></dir><dir name="ptsans"><file name="PT_Sans-Web-Regular.ttf" hash="f2eadd43911fbf66f2bf5c8b32f69724"/></dir><dir name="ptserif"><file name="PT_Serif-Web-Regular.ttf" hash="ae585d91ff895849f607a9bfbd439c6f"/></dir><dir name="ubuntu"><file name="Ubuntu-Regular.ttf" hash="1c5965c2b1dcdea439b54c3ac60cee38"/></dir></dir></dir><dir name="etc"><file name="config.xml" hash="971bcde3249c6f83f1b35e01ee5deba3"/><file name="system.xml" hash="c66b62553222cc0955d9d4125ad1e3e7"/></dir></dir></dir></target></contents>
+    <time>09:10:53</time>
+    <contents><target name="magecommunity"><dir name="Airlaunch"><dir name="Estoreiq"><dir name="Block"><dir name="Adminhtml"><file name="Menu.php" hash="dc5513a03a0998e25037b39e7c13b183"/></dir><dir name="Sales"><dir name="Order"><file name="Grid.php" hash="c69def5adef78f46461f31b1c0b08363"/></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="e978f8cd3cc0d2370aa5e6c166ac225c"/></dir><dir name="Model"><file name="Abstract.php" hash="021fd207cf7c8bc289ba2667e2ba8c0f"/><file name="Bodyfontsizeoptions.php" hash="4df00aae6e51cfae4385eeb4e7557b16"/><file name="Code128bWin.ttf" hash="83596705be9d39659132277f54b3f098"/><file name="Creditmemo.php" hash="58d24adda6a473723e798a8aaf2337d2"/><file name="Fontoptions.php" hash="250540387cbdc515dbd143992f9ae38a"/><file name="Headingfontsizeoptions.php" hash="61f110f2eeee6a46fa057bb167c03984"/><file name="Invoice.php" hash="87d5b110f8651a1ae8b60719b28111b1"/><file name="Shipment.php" hash="fd7c6148325dde51267098a55b3e6b8b"/><file name="Shipperoptions.php" hash="e1fd95e23ab503af7637a03208ad0c7c"/></dir><dir name="controllers"><file name="Code128bWin.ttf" hash="83596705be9d39659132277f54b3f098"/><file name="IndexController.php" hash="a0d5f49bf7b68d4a54954ca66962695b"/><file name="MessagesController.php" hash="f12dc8432acad774ad32993a764c8b66"/><file name="OrderController.php" hash="a99c3dd008f9922551114a2bfc5ce7bd"/><dir name="fonts"><dir name="abel"><file name="Abel-Regular.ttf" hash="75e8975966c040d18b299029193d3b1f"/></dir><dir name="arimo"><file name="Arimo-Regular.ttf" hash="9a4661f2e5c1eb96c0e686f30b5ef049"/></dir><dir name="asap"><file name="Asap-Regular.ttf" hash="83e3094c6e4917d8ad4db63ee8e7a335"/></dir><dir name="asul"><file name="Asul-Bold.ttf" hash="d5fd04a8d91a383e306ce54039fbd5e1"/><file name="Asul-Regular.ttf" hash="17a2db6c0860ff5ca392ed5fad200b2c"/></dir><dir name="cabin"><file name="Cabin-Regular.ttf" hash="b308848b6663f032b7d57e6b35c7a783"/></dir><dir name="cabincondensed"><file name="CabinCondensed-Regular.ttf" hash="126dd5269b42635276f6f8d767241c75"/></dir><dir name="droid"><file name="DroidSansMono-Regular.ttf" hash="3922dfe38a36da7d6edfb1fe77b276fb"/><file name="DroidSerif-Regular.ttf" hash="bfb2f44a7c1deba39f7f4d39bff18eeb"/></dir><dir name="francoisone"><file name="FrancoisOne.ttf" hash="b78536ec82d2100c2599e89d2386a0cf"/></dir><dir name="lato"><file name="Lato-Black.ttf" hash="77d353744697c77955f9bacc7f3ed90a"/><file name="Lato-Regular.ttf" hash="7f690e503a254e0b8349aec0177e07aa"/></dir><dir name="lobster"><file name="Lobster.ttf" hash="2d942223eccba9af2e62e0f955671d29"/></dir><dir name="opensans"><file name="OpenSans-Regular.ttf" hash="629a55a7e793da068dc580d184cc0e31"/></dir><dir name="oswald"><file name="Oswald-Regular.ttf" hash="727a75824bbc14dcc8926e4ebb85ea71"/></dir><dir name="ptsans"><file name="PT_Sans-Web-Regular.ttf" hash="f2eadd43911fbf66f2bf5c8b32f69724"/></dir><dir name="ptserif"><file name="PT_Serif-Web-Regular.ttf" hash="ae585d91ff895849f607a9bfbd439c6f"/></dir><dir name="ubuntu"><file name="Ubuntu-Regular.ttf" hash="1c5965c2b1dcdea439b54c3ac60cee38"/></dir></dir></dir><dir name="etc"><file name="config.xml" hash="971bcde3249c6f83f1b35e01ee5deba3"/><file name="system.xml" hash="e8b5efab78ddc9fcb0ee7893c1d92f0b"/></dir></dir></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
 </package>
