@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Airlaunch_Estoreiq",
+    "name": "OpenMageModuleFostering\/Airlaunch_Estoreiq",
     "type": "magento-module",
     "license": "OSL-v3.0",
     "homepage": "",
     "description": "Printed label customiser for Magento",
     "authors": [
-    {
-        "name": "Justin Brooks",
-        "email": "sales@estoreiq.com"
-    }
-],
+        {
+            "name": "Justin Brooks",
+            "email": "sales@estoreiq.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
